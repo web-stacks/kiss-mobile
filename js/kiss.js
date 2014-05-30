@@ -3,7 +3,7 @@
  */
 (function () {
 
-  window.$ = function(selector) {
+  var $ = function(selector) {
     var all = [].slice.apply(document.querySelectorAll(selector));
     return {
       results: all,

@@ -1,12 +1,16 @@
 body {
     margin: 0px;
-
     min-height: 480px;
     font-family: Arial;
 }
 
 p {
     padding: 6px;
+}
+
+a:active,
+a:hover {
+    outline: 0;
 }
 
 form ul {
@@ -25,6 +29,7 @@ form ul li.no-border {
     border: 0;
     padding: 0;
 }
+
 input {
     font-size: 0.9em;
     -webkit-appearance: none;
@@ -45,12 +50,6 @@ input[type=submit] {
     -webkit-border-radius: 6px;
     width: 100%;
     padding: 6px;
-}
-
-
-a:active,
-a:hover {
-    outline: 0;
 }
 
 header {
@@ -81,6 +80,5 @@ div.card {
 }
 
 div#main {
-    margin-top: 40px;
     display: block;
 }
