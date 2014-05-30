@@ -20,13 +20,28 @@
   </style>
 </head>
 <body>
-  <h1 class="title">Main Page</h1>
-  <p>Cras mattis consectetur purus sit amet fermentum.</p>
-  <form id="informations" onsubmit="return false;"> <ul>
-    <li><input type="text" name="firstName" placeholder="FirstName"/></li>
-    <li><input type="text" name="lastName" placeholder="LastName"/></li>
-    <li><textarea name="about" placeholder="About you" rows="5"></textarea></li>
-    <li class="no-border"><input type="submit" name="Save" /></li> </ul>
-  </form>
+
+  <header>
+    <a href="#home" class="title">Lugdunum-METRO</a>
+  </header>
+
+  <div id="main" class="card">
+    <p> Main Page</p>
+    <p><a name="go_to_second" href="#second">next screen ...</a></p>
+  </div>
+
+  <div id="second" class="card">
+    <p>Cras mattis consectetur purus sit amet fermentum.</p>
+    <p><a name="go_to_first" href="#first">previous screen ...</a></p>
+    <form id="informations" onsubmit="return false;"> <ul>
+      <li><input type="text" name="firstName" placeholder="FirstName"/></li>
+      <li><input type="text" name="lastName" placeholder="LastName"/></li>
+      <li><textarea name="about" placeholder="About you" rows="5"></textarea></li>
+      <li class="no-border"><input type="submit" name="Save" /></li> </ul>
+    </form>
+  </div>
+
+  <script src="js/kiss.js"></script>
 </body>
 </html>
+

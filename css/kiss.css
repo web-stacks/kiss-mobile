@@ -47,12 +47,40 @@ input[type=submit] {
     padding: 6px;
 }
 
-h1.title {
-    font-size: 1.0em;
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    left: 0;
+    top: 0;
     padding: 6px;
     background: #333333;
     color: #AAAAAA;
-    border-bottom: 2px solid #205eaa;
+    border-bottom: 4px solid #205eaa;
     margin: 0 0 4px 0;
 }
 
+a.title {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+}
+
+div.card {
+    margin-top: 40px;
+    display: none;
+    padding: 0px;
+}
+
+div#main {
+    margin-top: 40px;
+    display: block;
+}
